@@ -1,0 +1,18 @@
+Script started on Sat 14 Nov 2020 10:20:08 AM EST
+[root@centos246 cis246lab2]# mkdir [K[K[K[K[K[Kcd
+[root@centos246 ~]# mkdir archive
+[root@centos246 ~]# cd /var/log
+[root@centos246 log]# ls
+[0m[01;34manaconda[0m  boot.log-20201105  cron       firewalld           lastlog   [01;34mrhsm[0m     tallylog  yum.log
+[01;34maudit[0m     btmp               dmesg      grubby              maillog   secure   [01;34mtuned[0m
+boot.log  [01;34mchrony[0m             dmesg.old  grubby_prune_debug  messages  spooler  wtmp
+[root@centos246 log]# cd
+[root@centos246 ~]# ls
+anaconda-ks.cfg  [0m[01;34marchive[0m  [01;34mrepos[0m
+[root@centos246 ~]# mkdir archive
+mkdir: cannot create directory ‘archive’: File exists
+[root@centos246 ~]# ls
+anaconda-ks.cfg  [0m[01;34marchive[0m  [01;34mrepos[0m
+[root@centos246 ~]# exit
+
+Script done on Sat 14 Nov 2020 10:27:25 AM EST
