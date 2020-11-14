@@ -16,14 +16,7 @@ mkdir: cannot create directory ‘archive’: File exists
 tar: Removing leading `/' from member names
 /var/log/boot.log
 /var/log/yum.log
-[root@centos246 archive]# tar -tf tar.log
-tar: tar.log: Cannot open: No such file or directory
-tar: Error is not recoverable: exiting now
-[root@centos246 archive]# tar -xf tar.log -C ~/bacliup[K[K[K[Kkup
-tar: tar.log: Cannot open: No such file or directory
-tar: Error is not recoverable: exiting now
 [root@centos246 archive]# tar[K[K[Kcd
-[root@centos246 ~]# tar -tf tar.log
 tar: tar.log: Cannot open: No such file or directory
 tar: Error is not recoverable: exiting now
 [root@centos246 ~]# cd tar.log
@@ -31,7 +24,6 @@ bash: cd: tar.log: No such file or directory
 [root@centos246 ~]# cd
 [root@centos246 ~]# ls
 anaconda-ks.cfg  [0m[01;34marchive[0m  [01;34mbackup[0m  [01;34mlog.tar[0m  [01;34mrepos[0m
-[root@centos246 ~]# tar -tf log.tar
 tar: log.tar: Cannot read: Is a directory
 tar: At beginning of tape, quitting now
 tar: Error is not recoverable: exiting now
