@@ -1,0 +1,49 @@
+Script started on Sat 14 Nov 2020 10:54:59 AM EST
+[root@centos246 cis246lab2]# mk[K[Kcd
+[root@centos246 ~]# mkdir log.tar
+[root@centos246 ~]# cd va[K[K/var/log
+[root@centos246 log]# mkdir archive[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir archive
+[root@centos246 log]# cd
+[root@centos246 ~]# mkdir arv[Kchive
+mkdir: cannot create directory ‘archive’: File exists
+[root@centos246 ~]# mkdi[K=[K[K[K[Kcd /var/log
+[root@centos246 log]# tar tf /home/archive/log.tar[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclear[K[K[K[K[Kmkdir backup[K[K[K[K[K[K[K[K[K[K[K[Kcd
+[root@centos246 ~]# mkdir archive
+mkdir: cannot create directory ‘archive’: File exists
+[root@centos246 ~]# mksi[K[Kdir backup
+[root@centos246 ~]# cd archive
+[root@centos246 archive]# tar -cvd[Kf log.tar /var/log/*.log
+tar: Removing leading `/' from member names
+/var/log/boot.log
+/var/log/yum.log
+[root@centos246 archive]# tar -tf tar.log
+tar: tar.log: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[root@centos246 archive]# tar -xf tar.log -C ~/bacliup[K[K[K[Kkup
+tar: tar.log: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[root@centos246 archive]# tar[K[K[Kcd
+[root@centos246 ~]# tar -tf tar.log
+tar: tar.log: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[root@centos246 ~]# cd tar.log
+bash: cd: tar.log: No such file or directory
+[root@centos246 ~]# cd
+[root@centos246 ~]# ls
+anaconda-ks.cfg  [0m[01;34marchive[0m  [01;34mbackup[0m  [01;34mlog.tar[0m  [01;34mrepos[0m
+[root@centos246 ~]# tar -tf log.tar
+tar: log.tar: Cannot read: Is a directory
+tar: At beginning of tape, quitting now
+tar: Error is not recoverable: exiting now
+[root@centos246 ~]# ta[K[Kcd tar.[K[K[K[K[K[K[Ktar -xf t[Klog.tar -C ~/backup
+tar: log.tar: Cannot read: Is a directory
+tar: At beginning of tape, quitting now
+tar: Error is not recoverable: exiting now
+[root@centos246 ~]# cd backup[K[K[K[K[K[Karchive
+[root@centos246 archive]# tar -tf log.tar
+var/log/boot.log
+var/log/yum.log
+[root@centos246 archive]# tar -xf log.tar 0[K-C ~/backup
+[root@centos246 archive]# exit
+
+Script done on Sat 14 Nov 2020 11:22:40 AM EST
