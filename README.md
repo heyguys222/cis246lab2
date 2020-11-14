@@ -1,2 +1,6 @@
 # cis246lab2
-Attendance lab 2 repository
+
+Name: Sam Maclean
+Date: 11/14/20
+
+Attendance Lab 2 Repository
